@@ -37,7 +37,7 @@ jobs:
         with:
           version: 'latest'
           rulesets: 'rulesets/java/quickstart.xml'
-          #sourcePath: 'src/main/java'
+          sourcePath: 'src/main/scala/io/snyk/woof'
           analyzeModifiedFilesOnly: false
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
