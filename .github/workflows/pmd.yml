@@ -36,7 +36,7 @@ jobs:
         uses: pmd/pmd-github-action@v1
         with:
           version: 'latest'
-          rulesets: 'https://github.com/pmd/pmd/tree/master/pmd-scala-modules/pmd-scala-common/src/main/resources/category/scala/bestpractices.xml'
+          rulesets: 'category/scala/bestpractices.xml'
           sourcePath: 'src/main/scala/io/snyk/woof'
           analyzeModifiedFilesOnly: false
       - name: Upload SARIF file
