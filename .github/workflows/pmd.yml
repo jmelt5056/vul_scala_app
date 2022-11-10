@@ -8,11 +8,7 @@ name: pmd
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-  schedule:
-    - cron: '41 19 * * 1'
+    branches: [ "eldrick19" ]
 
 permissions:
   contents: read
@@ -39,7 +35,7 @@ jobs:
         with:
           version: 'latest'
           #rulesets: 'category/scala/bestpractices.xml'
-          sourcePath: 'src/main/scala/io/snyk/woof'
+          rulesets: 'ruleset.xml'
           analyzeModifiedFilesOnly: false
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
