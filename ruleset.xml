@@ -5,7 +5,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
-    <description>
-Rules that flag potential security flaws.
-    </description>
+    <description>Rules that flag potential security flaws.</description>
+
+     <rule ref="category/scala/security.xml">
+        <priority>1</priority>                  <!-- Only Security should show red, eversthing else default 2 -->
+    </rule>
+
+    <rule ref="category/scala/design.xml"/>
+    <rule ref="category/scala/codestyle.xml"/>
+    <rule ref="category/scala/documentation.xml"/>
+    <rule ref="category/scala/errorprone.xml"/>
+    <rule ref="category/scala/multithreading.xml"/>
+    <rule ref="category/scala/performance.xml"/>
+    <rule ref="category/scala/bestpractices.xml"/>
+
 </ruleset>
