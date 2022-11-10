@@ -41,4 +41,15 @@ class ZipHandler {
       }
     } finally if (!temp.delete) System.err.println("temporary file cleanup failed: " + temp)
   }
+
+  /*
+  def getWordList(value:String) = Action {
+    if (!Files.exists(Paths.get("public/lists/" + value))) {
+      NotFound("File not found")
+    } else {
+      val result = Source.fromFile("public/lists/" + value).getLines().mkString // Weak point
+      Ok(result)
+    }
+  }
+  */
 }
