@@ -3,16 +3,13 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: pmd
+name: pmd-eldrick19
 
 
 on:
   push:
     branches: [ "eldrick19" ]
   workflow_dispatch:
-
-permissions:
-  contents: read
 
 jobs:
   pmd-code-scan:
