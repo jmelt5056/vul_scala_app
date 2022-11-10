@@ -41,7 +41,10 @@ jobs:
         with:
           sarif_file: pmd-report.sarif
 
+      - run: |
+          ls -a
+
       - uses: actions/download-artifact@v3
         with:
           name: pmd-report.sarif
-          path: pmd-report.sarif
+
