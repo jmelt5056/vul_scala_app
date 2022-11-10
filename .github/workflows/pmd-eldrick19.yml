@@ -43,5 +43,5 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: pmd-report
+          name: pmd-report.sarif
           path: pmd-report.sarif
