@@ -11,9 +11,6 @@ on:
     branches: [ "eldrick19" ]
   workflow_dispatch:
 
-permissions:
-  contents: read
-
 jobs:
   pmd-code-scan:
     permissions:
